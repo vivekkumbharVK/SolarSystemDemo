@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sun">
+            <img src="./resources/png1.webp" alt="">
+        </div>
+        <div class="mercury"></div>
+        <div class="venus"></div>
+        <div class="earth">
+            <div class="moon"></div>
+        </div>
+        <div class="mars"></div>
+        <div class="jupiter"></div>
+        <div class="saturn"></div>
+        <div class="uranus"></div>
+        <div class="neptune"></div>
+        <div class="pluto"></div>
+    </div>
+    <script>
+
+function createStars()
+{
+    const container=document.querySelector("body");
+    for(let i=0;i<1000;i++){
+        
+            const star=document.createElement("div");
+            star.className="star";
+            star.style.width=".1px";
+            star.style.height=".1px";
+
+            star.style.top= Math.random() * 100 + "%";
+            star.style.left= Math.random() * 100 + "%";
+
+            container.appendChild(star);
+        }
+   }
+   createStars();
+   function createStars2()
+   {
+       const container=document.querySelector("body");
+       for(let i=0;i<1000;i++){
+           
+               const star2=document.createElement("div");
+               star2.className="star2";
+               star2.style.width=".1px";
+               star2.style.height=".1px";
+   
+               star2.style.top= Math.random() * 100 + "%";
+               star2.style.left= Math.random() * 100 + "%";
+   
+               container.appendChild(star2);
+           }
+      }
+      createStars2();
+   
+      function createStars3()
+   {
+       const container=document.querySelector("body");
+       for(let i=0;i<1000;i++){
+           
+               const star3=document.createElement("div");
+               star3.className="star2";
+               star3.style.width=".1px";
+               star3.style.height=".1px";
+   
+               star3.style.top= Math.random() * 100 + "%";
+               star3.style.left= Math.random() * 100 + "%";
+   
+               container.appendChild(star2);
+           }
+      }
+      createStars3();
+   
+
+    </script>
+</body>
+</html>
